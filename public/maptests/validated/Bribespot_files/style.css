@@ -1,0 +1,550 @@
+/*
+Theme Name: BribeSpot
+Author URI: http://bribespot.com
+Version: 1
+Author: Sten Aus
+Description: Template for BribeSpot. Garage48. Copyright 2011.
+*/
+
+*{ margin:0; padding: 0;}
+img {border: 0;}
+html{height:100%}
+body{
+	width: 1200px; 
+	font-family: Arial; 
+	background: #000;
+	margin: auto;
+	height:100%;
+	position: relative;
+	
+}
+/****************************************************************************************************/
+#header{
+	width: 100%;
+	background: #000;
+	color: #dddddd;
+	height: 110px;
+}
+
+#logo{
+	float:left;
+	width: 290px;
+	margin-right: 10px;
+}
+
+#menu{
+	float: left;
+	height: 34px;
+	margin-top: 26px;
+	width: 46%;
+}
+
+	#menu ul{
+		list-style: none;
+		display: inline;
+	}
+	
+	#menu ul li{
+		display:inline;
+		margin-right:20px;
+	}
+	
+	#menu ul li a {
+		color: #ddd;
+		text-decoration: none;
+	}
+	
+	#menu ul li.current_page_item{
+		font-weight:bold;
+	}
+
+	#menu ul li.current_page_item a{
+		color: #FF0000;
+	}
+	
+/*	#menu ul li.page-item-11{
+		display: inline;
+	}
+*/
+#store{
+	width: 337px;
+	float: right;
+	text-align: center;
+	position: relative;
+	top: -30px;
+	right: 0%;
+	height: 70px;
+	color: #666666;
+	font-size: 12px;
+}
+
+#searchbtn{
+	float:left;
+	margin-top:0;
+	height: 27px;
+	width: 46%;
+}
+
+#searchbtn input{
+	-moz-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#searchbtn input.textbox{
+	background: url(../img/textbox_bg.png) repeat-x;
+	color: #000;
+	width: 70%;
+	border: 1px solid #777777;
+	height: 29px;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+#searchbtn input.btn{
+	background: url(../img/btn_bg_txt.png) no-repeat;
+	width: 93px;
+	border:0;
+	height: 32px;
+	vertical-align: top;
+}
+
+/****************************************************************************************************/
+
+#wrapper{
+	float: left;
+	margin-left: -310px;
+	width: 100%;
+	height: 100%;
+}
+
+#map_canvas{
+	height: 100%;
+	margin-left: 336px;
+    height: 100%;
+    background-color: #99b3cc;
+}
+
+/****************************************************************************************************/
+
+#sidebar-page{
+	float:right;
+	width: 290px;
+	text-align: left;
+	height:100%;
+}
+
+#sidebar-page .bottom{
+	position: absolute;
+	bottom: 0;		
+}
+
+
+#sidebar{
+	margin-right: 0.5%;
+	float: right;
+	width: 24%;
+	background: black;
+	text-align: center;
+	height:100%;
+}
+
+#sidebar p{
+	margin-right: 10px;
+	text-align: justify;
+}
+
+#category_select{
+	height: 24px;
+	width: 100%;
+	margin: 0 auto;
+	float:left;
+	display: inline;
+	text-align: center;
+	margin-top: 10px;
+	color: #878787;
+}
+
+	.category_select_button{
+		background: url(../img/category_select_bg.png) no-repeat;
+		width: 67px;
+		height: 24px;
+		color: #878787;
+		float: left;
+		font-size: 12px;
+		margin: 0 auto;
+		display: inline;
+		margin-right: 10px;
+		padding-top: 4px;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	  .category_select_button_active{
+		  color: #d9d8d8;
+		  background: url(../img/category_select_bg.png) no-repeat;
+		  width: 67px;
+		  height: 24px;
+		  float: left;
+		  font-size: 12px;
+		  margin: 0 auto;
+		  display: inline;
+		  margin-right: 10px;
+		  padding-top: 4px;
+		  font-weight: bold;
+		  text-align: center;
+		}
+	
+	 .category_select_button_active a, .category_select_button_active a:visited, .category_select_button_active a:hover, .category_select_button_active a:active{
+	  	color: #d9d8d8;
+	  	text-decoration: none;
+	 }
+	
+	.category_select_button a, .category_select_button a:visited, .category_select_button a:hover, .category_select_button a:active{
+		color: #878787;
+		text-decoration: none;
+	}
+
+#bribe_list{
+	height:70%;
+	width: 290px;
+	text-align: left;
+	margin: 26px auto;
+	border: 1px solid #2F2F2F;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#bribe_list .entry{
+	width: 232px;
+	border-bottom: 1px dotted #2f2f2f;
+	text-align:left;
+	padding: 7px;
+	padding-left: 40px;
+}
+
+#bribe_list .entry span.icon{
+	margin-left: -30px;
+	margin-bottom: -30px;
+	margin-top: 15px;
+	float:left;
+}
+	
+#bribe_list .entry span.title{
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	display:block;
+}
+	
+#bribe_list .entry span.location{
+	color: #636363;
+	font-size: 11px;
+	display:block;
+	font-weight: bold;
+}
+
+#bribe_list .entry span.amount{
+	color: #e72e09;
+	font-size: 12px;
+	font-weight: bold;
+	display:block;			
+}
+
+#bribe_list .entry span.date{
+	color: gray;
+	font-size: 10px;
+	font-weight: bold;
+	float:right;		
+}
+
+#bribe_list .entry a{
+	text-decoration: none;
+}
+
+#bribe_list .entry a:HOVER .title{
+	text-decoration: underline !important;			
+}
+
+/****************************************************************************************************/
+
+.marker_location{
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.marker_category_1{color: #018cee; font-size: 13px;}
+.marker_category_2{color: #e70162; font-size: 13px;}
+.marker_category_3{color: #e8d500; font-size: 13px;}
+.marker_category_4{color: #ec8501; font-size: 13px;}
+.marker_category_5{color: #56c712; font-size: 13px;}
+.marker_category_6{color: #9911b7; font-size: 13px;}
+.marker_category_7{color: #5240d7; font-size: 13px;}
+.marker_category_8{color: #01e883; font-size: 13px;}
+
+.marker_date{
+	font-size: 12px;
+	color: #636363;
+}
+
+.marker_amount{
+	color: #e72e09;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.marker_what{
+	color: #636363;
+	font-weight: bold;
+	font-size: 11px;
+}
+/****************************************************************************************************/
+
+#page{
+	background: #fff;
+	width: inherit;
+	margin-left: 0;
+	position: absolute;
+	float: left;
+	clear:both;
+}
+
+#page_inside{
+	height: 100%;
+	padding: 60px 100px;	
+	background: white;
+	color: #292929;
+	font-size: 13px;
+	margin-left: 26px;
+}
+
+h2.section_title {
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Arial,sans-serif; 
+}
+
+
+#page_inside h1{
+	font-weight: bold;
+	font-size: 26px;
+	padding-bottom: 20px;
+}
+
+#check_in_stream{
+	border: 1px solid gray;
+	width: 850px;
+	height: 100%;
+}
+#check_in_stream .entry{
+	position: relative;
+	border-bottom: 1px solid gray;	
+	padding: 10px 60px;
+}
+#check_in_stream .last{
+	border-bottom: none;
+}
+#check_in_stream .entry h2.subtitle{
+	font-weight: 12px;
+	font-size: 18px;
+	padding: 5px 0 3px 0;
+}
+
+#check_in_stream .entry .marker{
+	position: absolute;
+	left: 20px;
+	top: 39px;
+}
+
+#check_in_stream .entry a.read_comments{
+	color: white;
+	font-weight: bold;
+	padding:10px 15px;
+	background: black;
+	text-decoration: none;;
+	display: inline-block;
+}
+
+#check_in_stream .entry .sum{
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+#check_in_stream .entry .category{
+	font-weight: bold;
+	font-size: 16px;
+	color:gray;
+}
+#check_in_stream .entry .date{
+	float: right;
+	color: #949494;
+	font-size: 12px;
+	padding-top:7px;
+}
+#check_in_stream .entry .comment{
+	margin-bottom:25px;
+}
+
+
+
+#marker_info {width: 350px}
+
+#marker_info h2.subtitle{
+	font-weight: 12px;
+	font-size: 18px;
+	padding: 5px 0 3px 0;
+}
+#marker_info a.read_comments{
+	color: white;
+	font-weight: bold;
+	font-size:11px;
+	padding:10px 15px;
+	background: black;
+	text-decoration: none;;
+	display: inline-block;
+}
+#marker_info .sum{
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+#marker_info .category{
+	font-weight: bold;
+	font-size: 16px;
+	color:gray;
+}
+#marker_info  .date{
+	color: #949494;
+	font-size: 12px;
+	padding-top:7px;
+}
+#marker_info .comment{
+	margin-bottom:25px;
+}
+
+
+
+/****************************************************************************************************/
+
+#footer{
+	clear:both;
+	color: #535353;
+	background: url(../img/footer.png) repeat-x;
+	height: 34px;
+	margin-left: 26px;
+}
+	#footer ul{
+		list-style: none;
+		display: inline;
+	}
+	
+	#footer ul li{
+		display:inline;
+		margin-right:20px;
+	}
+	
+	#footer ul li a {
+		color: #141414;
+		text-decoration: none;
+	}
+	
+	#footer ul li.current_page_item{
+		font-weight:bold;
+	}
+
+	#footer ul li.current_page_item a{
+		color: #FF0000;
+	}
+	
+/*	#menu ul li.page-item-11{
+		display: inline;
+	}
+*/
+
+#footer span.text{
+	margin-left: 23px;
+	color: #535353;
+	font-size: 12px;
+	text-align: left;
+	float:left;
+	padding-top: 10px;
+} 
+
+#footer span.menu{
+	color: #141414;
+	float: left;
+	text-align:center;
+	font-size: 12px;
+	margin-left: 22px;
+	padding-top: 10px;
+} 
+ 
+#footer span.icons{
+	float: right;
+	text-align: right;
+	margin-right: 20px;
+} 
+
+
+#footer-page{
+	color: #000;
+	height:44px;
+	margin-top: 10px;
+	width: 100%;
+	float: left;
+	border-top: 1px solid #d2d2d2;
+}
+
+/**************************************************************************************************************/
+
+#bribe_add_window {
+	width: 277px;
+}
+
+#bribe_add_window .inner_box{
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#bribe_add_window .error_note{
+	color: red;
+}
+
+#bribe_add_window .inner_box h1{
+	color: #e72e09;
+	font-size: 18px;
+}
+
+#bribe_add_window .row{
+	margin: 5px;
+}
+
+#bribe_add_form input[type="text"], #bribe_add_window textarea, 
+	#bribe_add_window select{
+	min-width: 250px;
+	width: 250px;
+	padding:5px;
+	background: #ebebeb;
+}
+
+#bribe_add_form input[type="text"]{
+	font-size: 17px;
+	font-weight: bold;
+	color: red;
+	padding: 5px;
+} 
+
+
+#bribe_add_window select{
+	width: 264px;
+}
+
+
+/****************************************************************************************************/
